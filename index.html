@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random passwords</title>
+    <link rel = "stylesheet" href="index.css">
+    <script src = "index.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Karla:ital,wght@0,200..800;1,200..800&family=Orbitron:wght@400;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class = "navbar">
+        <div class = "circle"></div>
+
+        <div class = "navbar-logo">
+            <p id = "head">Random Passwords</p>
+        </div>
+
+        <div class = "navbar-other">
+            <p>Home</p>
+            <p>About</p>
+            <p>Contact</p>
+            <button id = "search">search in site</button>
+        </div>
+    </nav>
+
+    <div class = "container">
+        <div class = "card">
+            <span id = "text">Generate a <br><span id = "texts">random password</span></span>
+            <br><br><br>
+            <p>Never use an insecure password again</p>   
+            <br><br><hr>
+            <button id = "copy">COPY YOUR PASWORD</button>
+        </div>
+
+        <div class = "password">
+            <div class="password-length">
+                <label for = "length">Password length</label>
+                <input  placeholder="Enter password length" type = "number" id = "length" min = "8" max = "20" value = "8">
+                <span id = "rules">Minimum length should be 8 and maximum should be 20</span>
+            </div>
+
+            <div class = "checkbox">
+                <p>Options:</p>
+                <div>
+                    <label for = "symbols">Include symbols</label>
+                    <input type = "checkbox" id = "symbols" checked>
+                </div>
+                <div> 
+                    <label for = "numbers">Include numbers</label>
+                    <input type = "checkbox" id = "numbers" checked>
+                    
+                </div>
+                <div class = "btn">
+                    <button id = "generate">Generate Password</button>
+                    <hr>
+                </div>
+
+                <div class = "password-display">
+                    
+                    <input type = "text" placeholder="Generated Password" id = "password" readonly autocomplete="off">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    
+</body>
+</html>
